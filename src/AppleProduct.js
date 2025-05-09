@@ -1,3 +1,4 @@
+import './AppleProduct.css'
 import React from 'react'
 import { useState } from 'react';
 
@@ -21,9 +22,14 @@ export function AppleProduct( props ) {
   };
 
   return (
-    <div onClick={handleClick}>
-      <img alt="producto" src={mapaSVG[props.type]} width={200} />
-      <img alt="heart" src={heart} style={{ width:10 + 10*clicks + 'px'}}/>
+    <div className='apple-product' onClick={handleClick}>
+      <img className='product' 
+        alt="producto" 
+        src={mapaSVG[props.type]} 
+        width={200} />
+      <img className='heart' 
+        alt="heart" src={heart} 
+        style={{ width:10 + 10*clicks + 'px'}}/>
     </div>
   )
 };
