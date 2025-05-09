@@ -3,9 +3,9 @@ import { useState } from 'react';
 import { AppleProduct } from './AppleProduct';
 
 function getRandomProduct() {
-  const products_local = ['iphone', 'ipad', 'watch', 'imac', 'macbook', 'airpods'];
+  const products = ['iphone', 'ipad', 'watch', 'imac', 'macbook', 'airpods'];
 
-  return products_local[ Math.floor(Math.random() * products_local.length) ];
+  return products[ Math.floor(Math.random() * products.length) ];
 }
 
 export function App() {
